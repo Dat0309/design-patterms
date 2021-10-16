@@ -1,0 +1,16 @@
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\bin\Debug\net5.0\StrategyPatterns.exe
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\bin\Debug\net5.0\StrategyPatterns.deps.json
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\bin\Debug\net5.0\StrategyPatterns.runtimeconfig.json
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\bin\Debug\net5.0\StrategyPatterns.runtimeconfig.dev.json
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\bin\Debug\net5.0\StrategyPatterns.dll
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\bin\Debug\net5.0\ref\StrategyPatterns.dll
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\bin\Debug\net5.0\StrategyPatterns.pdb
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\obj\Debug\net5.0\StrategyPatterns.csproj.AssemblyReference.cache
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\obj\Debug\net5.0\StrategyPatterns.GeneratedMSBuildEditorConfig.editorconfig
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\obj\Debug\net5.0\StrategyPatterns.AssemblyInfoInputs.cache
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\obj\Debug\net5.0\StrategyPatterns.AssemblyInfo.cs
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\obj\Debug\net5.0\StrategyPatterns.csproj.CoreCompileInputs.cache
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\obj\Debug\net5.0\StrategyPatterns.dll
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\obj\Debug\net5.0\ref\StrategyPatterns.dll
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\obj\Debug\net5.0\StrategyPatterns.pdb
+D:\NAM3\design-patterms\BehavioralPatterns\StrategyPatterns\StrategyPatterns\obj\Debug\net5.0\StrategyPatterns.genruntimeconfig.cache
