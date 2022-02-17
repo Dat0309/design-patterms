@@ -1,0 +1,16 @@
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\bin\Debug\net5.0\FileExample.exe
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\bin\Debug\net5.0\FileExample.deps.json
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\bin\Debug\net5.0\FileExample.runtimeconfig.json
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\bin\Debug\net5.0\FileExample.runtimeconfig.dev.json
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\bin\Debug\net5.0\FileExample.dll
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\bin\Debug\net5.0\ref\FileExample.dll
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\bin\Debug\net5.0\FileExample.pdb
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\obj\Debug\net5.0\FileExample.csproj.AssemblyReference.cache
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\obj\Debug\net5.0\FileExample.GeneratedMSBuildEditorConfig.editorconfig
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\obj\Debug\net5.0\FileExample.AssemblyInfoInputs.cache
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\obj\Debug\net5.0\FileExample.AssemblyInfo.cs
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\obj\Debug\net5.0\FileExample.csproj.CoreCompileInputs.cache
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\obj\Debug\net5.0\FileExample.dll
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\obj\Debug\net5.0\ref\FileExample.dll
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\obj\Debug\net5.0\FileExample.pdb
+E:\NAM3\design-patterms\StructuralPatterns\Composite & Iterator\FileExample\FileExample\obj\Debug\net5.0\FileExample.genruntimeconfig.cache
