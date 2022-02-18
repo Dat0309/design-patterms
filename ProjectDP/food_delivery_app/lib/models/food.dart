@@ -2,26 +2,30 @@ import 'package:food_delivery_app/models/menu_component.dart';
 
 class FoodLeaf extends MenuComponent {
   String name;
-  int price;
+  double price;
   String imgUrl;
+  String description;
+  double rating;
 
-  FoodLeaf({required this.name, required this.price, required this.imgUrl});
+  FoodLeaf(
+      {required this.name,
+      required this.price,
+      required this.imgUrl,
+      required this.description,
+      required this.rating});
 
   @override
   String? getName() {
-    // TODO: implement getName
     return name;
   }
 
   @override
-  int getPrice() {
-    // TODO: implement getPrice
+  double getPrice() {
     return price;
   }
 
   @override
   String? getImgUrl() {
-    // TODO: implement getImgUrl
     return imgUrl;
   }
 }
