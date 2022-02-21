@@ -1,24 +1,38 @@
 import 'package:flutter/material.dart';
 
-class FilterButton extends StatelessWidget {
+class FilterButton extends StatefulWidget {
   final String title;
-  final bool isSelected;
+  late bool isSelected;
 
-  const FilterButton({Key? key, required this.title, required this.isSelected})
-      : super(key: key);
+  FilterButton(this.title, this.isSelected);
 
+  @override
+  State<FilterButton> createState() => _FilterButtonState();
+}
+
+class _FilterButtonState extends State<FilterButton> {
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(right: 8),
       child: RaisedButton(
-        onPressed: () {},
+        onPressed: () {
+          if (!widget.isSelected) {
+            setState(() {
+              widget.isSelected = !widget.isSelected;
+            });
+          } else {
+            setState(() {
+              widget.isSelected = !widget.isSelected;
+            });
+          }
+        },
         elevation: 0.5,
-        color: isSelected ? Colors.green : Colors.white,
+        color: widget.isSelected ? Colors.green : Colors.white,
         child: Text(
-          title,
+          widget.title,
           style: TextStyle(
-            color: isSelected ? Colors.white : Colors.green,
+            color: widget.isSelected ? Colors.white : Colors.green,
           ),
         ),
       ),

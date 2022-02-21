@@ -1,5 +1,3 @@
-import 'dart:html';
-
 abstract class MenuComponent {
   void add(MenuComponent menuComponent) {}
 
@@ -14,6 +12,10 @@ abstract class MenuComponent {
   void delete(MenuComponent menuComponent) {}
 
   double getPrice() {
+    return 0;
+  }
+
+  int getIndex() {
     return 0;
   }
 

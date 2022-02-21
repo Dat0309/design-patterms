@@ -38,10 +38,12 @@ List<MenuComponent> listmenu1 = [
       rating: 4.5),
 ];
 final MenuComponent menu1 = new MenuComposite(
-    listFood: listmenu1,
-    name: 'Food',
-    image: "https://source.unsplash.com/200x200/?food",
-    totalItem: 129);
+  listFood: listmenu1,
+  name: 'Food',
+  image: "https://source.unsplash.com/200x200/?food",
+  totalItem: 129,
+  index: 0,
+);
 
 final List<MenuComponent> listmenu2 = [
   FoodLeaf(
@@ -81,10 +83,12 @@ final List<MenuComponent> listmenu2 = [
       rating: 4.5),
 ];
 final MenuComponent menu2 = new MenuComposite(
-    listFood: listmenu2,
-    name: 'Dessert',
-    image: "https://source.unsplash.com/200x200/?dessert",
-    totalItem: 45);
+  listFood: listmenu2,
+  name: 'Dessert',
+  image: "https://source.unsplash.com/200x200/?dessert",
+  totalItem: 45,
+  index: 1,
+);
 
 List<MenuComponent> listmenu3 = [
   FoodLeaf(
@@ -110,10 +114,12 @@ List<MenuComponent> listmenu3 = [
       rating: 3.5),
 ];
 final MenuComponent menu3 = new MenuComposite(
-    listFood: listmenu3,
-    name: 'Snacks',
-    image: "https://source.unsplash.com/200x200/?snack",
-    totalItem: 12);
+  listFood: listmenu3,
+  name: 'Snacks',
+  image: "https://source.unsplash.com/200x200/?snack",
+  totalItem: 12,
+  index: 2,
+);
 
 List<MenuComponent> listmenu4 = [
   FoodLeaf(
@@ -153,10 +159,12 @@ List<MenuComponent> listmenu4 = [
       rating: 4.5),
 ];
 final MenuComponent menu4 = new MenuComposite(
-    listFood: listmenu4,
-    name: 'Meat',
-    image: "https://source.unsplash.com/200x200/?meat",
-    totalItem: 12);
+  listFood: listmenu4,
+  name: 'Meat',
+  image: "https://source.unsplash.com/200x200/?meat",
+  totalItem: 12,
+  index: 3,
+);
 
 List<MenuComponent> listmenu5 = [
   FoodLeaf(
@@ -194,9 +202,11 @@ List<MenuComponent> listmenu5 = [
       rating: 4.5),
 ];
 final MenuComponent menu5 = new MenuComposite(
-    listFood: listmenu5,
-    name: 'Street food',
-    image: "https://source.unsplash.com/200x200/?food",
-    totalItem: 12);
+  listFood: listmenu5,
+  name: 'Street food',
+  image: "https://source.unsplash.com/200x200/?food",
+  totalItem: 12,
+  index: 4,
+);
 
 List<MenuComponent> menu = [menu1, menu2, menu3, menu4, menu5];

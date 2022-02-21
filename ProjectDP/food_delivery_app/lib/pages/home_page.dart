@@ -1,9 +1,13 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/data/data.dart';
+import 'package:food_delivery_app/main.dart';
 import 'package:food_delivery_app/models/food.dart';
+import 'package:food_delivery_app/models/menu_component.dart';
+import 'package:food_delivery_app/models/menu_composite.dart';
+import 'package:food_delivery_app/widgets/categories_card.dart';
 import 'package:food_delivery_app/widgets/custom_icon_button.dart';
 import 'package:food_delivery_app/widgets/filter_button.dart';
+import 'package:food_delivery_app/widgets/food_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -26,6 +30,18 @@ class _HomePageState extends State<HomePage> {
             ),
             buildSearch(),
             buildFilter(),
+            buildSectionTitle(),
+            buildCategoryList(),
+            SizedBox(
+              height: 8,
+            ),
+            Text(
+              'Danh sách món ăn',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             buildFoodList(),
           ],
         ),
@@ -45,6 +61,14 @@ Widget buildHeader() {
             icon: Icon(Icons.menu),
             onPressed: () {},
           ),
+          Text(
+            'Food Composite App',
+            style: TextStyle(
+              color: Colors.green,
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+          ),
           CircleAvatar(
             backgroundImage:
                 NetworkImage("https://source.unsplash.com/200x200/?man"),
@@ -55,11 +79,11 @@ Widget buildHeader() {
         height: 16,
       ),
       Text(
-        'Hello Dazzz',
+        'Xin chào Đạt',
         style: TextStyle(fontSize: 16),
       ),
       Text(
-        'Food delivery',
+        'Chọn món ăn ưa thích của bạn!',
         style: TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold,
@@ -75,7 +99,7 @@ Widget buildSearch() {
       Expanded(
         child: TextField(
           decoration: InputDecoration(
-            hintText: 'Search food',
+            hintText: 'Tìm kiếm đồ ăn',
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
             ),
@@ -88,7 +112,7 @@ Widget buildSearch() {
         icon: Icon(Icons.filter_list),
         onPressed: () {},
         margin: EdgeInsets.only(left: 8),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.green,
       ),
     ],
   );
@@ -101,10 +125,10 @@ Widget buildFilter() {
     child: ListView(
       scrollDirection: Axis.horizontal,
       children: [
-        FilterButton(title: 'Popular', isSelected: true),
-        FilterButton(title: 'New Items', isSelected: false),
-        FilterButton(title: 'Hot Deal', isSelected: false),
-        FilterButton(title: 'Combo pack', isSelected: false),
+        FilterButton('Phổ biến', false),
+        FilterButton('Món mới', false),
+        FilterButton('Hot Deal', false),
+        FilterButton('Combo', false),
       ],
     ),
   );
@@ -112,8 +136,59 @@ Widget buildFilter() {
 
 Widget buildFoodList() {
   return Container(
-    height: 220,
-    margin: EdgeInsets.only(top: 24),
-    child: ListView.builder(itemBuilder: (context, index) {}),
+    height: 450,
+    margin: EdgeInsets.only(top: 10),
+    child: ListView.builder(
+        physics: BouncingScrollPhysics(),
+        scrollDirection: Axis.vertical,
+        itemCount: menu[0].getListFoods()?.length,
+        itemBuilder: (context, index) {
+          List<MenuComponent>? foods =
+              List<MenuComponent>.empty(growable: true);
+          for (var item in menu) {
+            foods = item.getListFoods();
+          }
+          return FoodCard(food: foods?[index] as FoodLeaf);
+        }),
+  );
+}
+
+Widget buildCategoryList() {
+  return Container(
+    height: 120,
+    child: ListView.builder(
+      itemCount: menu.length,
+      scrollDirection: Axis.horizontal,
+      physics: BouncingScrollPhysics(),
+      shrinkWrap: true,
+      primary: false,
+      itemBuilder: (context, index) {
+        final category = menu[index];
+        return CategoryCard(
+          category: category as MenuComposite,
+          index: category.getIndex(),
+        );
+      },
+    ),
+  );
+}
+
+Widget buildSectionTitle() {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: [
+      Text(
+        "Loại món ăn",
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      FlatButton(
+        onPressed: () {},
+        textColor: Colors.green,
+        child: Text("Xem tất cả"),
+      ),
+    ],
   );
 }

@@ -4,6 +4,7 @@ class MenuComposite extends MenuComponent {
   String name;
   String image;
   int totalItem;
+  int index;
 
   List<MenuComponent> listFood = new List.empty(growable: true);
 
@@ -11,7 +12,8 @@ class MenuComposite extends MenuComponent {
       {required this.listFood,
       required this.name,
       required this.image,
-      required this.totalItem});
+      required this.totalItem,
+      required this.index});
 
   @override
   String? getName() {
@@ -37,6 +39,12 @@ class MenuComposite extends MenuComponent {
   @override
   void add(MenuComponent menuComponent) {
     this.listFood.add(menuComponent);
+  }
+
+  @override
+  int getIndex() {
+    print(index);
+    return this.index;
   }
 
   @override
