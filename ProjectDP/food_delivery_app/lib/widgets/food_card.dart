@@ -37,7 +37,7 @@ Widget buildFoodImage(FoodLeaf food) {
     children: [
       ClipRRect(
         borderRadius: BorderRadius.circular(12),
-        child: Image.network(
+        child: Image.asset(
           food.imgUrl,
           height: 170,
           width: double.infinity,
